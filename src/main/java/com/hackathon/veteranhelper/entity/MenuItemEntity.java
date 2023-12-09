@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import jakarta.persistence.Version;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -17,49 +18,60 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
-import org.springframework.format.annotation.DateTimeFormat;
 
-import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Entity(name = "Request")
-@Table(name = "requests")
+@Entity(name = "MenuItemEntity")
+@Table(
+        name = "menu_items",
+        uniqueConstraints = @UniqueConstraint(
+                name = "menu_items_name_key",
+                columnNames = "name"
+        )
+)
 @Getter
 @Setter
 @ToString
 @Builder(setterPrefix = "with")
 @NoArgsConstructor
 @AllArgsConstructor
-public class Request {
+public class MenuItemEntity {
+
     @Id
     @GeneratedValue
-    @Column(name = "id", nullable = false, columnDefinition = "uuid")
+    @Column(name = "id", nullable = false, columnDefinition="uuid")
     private UUID id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(
-            name = "customer_id",
-            referencedColumnName = "id",
-            nullable = false
-    )
-    private CustomerEntity customer;
-
     @Column(
-            name = "creation_time",
-            nullable = false
-    )
-    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
-    @NotNull
-    private LocalDateTime creationTime;
-
-    @Column(
-            name = "application_number",
+            name = "message",
             nullable = false,
             columnDefinition = "varchar(300)"
     )
     @Length(min = 1, max = 300)
     @NotNull
-    private String applicationNumber;
+    private String message;
+
+    @Column(
+            name = "name",
+            columnDefinition = "varchar(300)"
+    )
+    @Length(min = 1, max = 300)
+    private String name;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(
+            name = "parent_id",
+            referencedColumnName = "id"
+    )
+    private MenuItemEntity parentId;
+
+    @Column(
+            name = "times_chosen",
+            nullable = false,
+            columnDefinition = "bigint"
+    )
+    @NotNull
+    private Long timesChosen;
 
     @Version
     private Long version;

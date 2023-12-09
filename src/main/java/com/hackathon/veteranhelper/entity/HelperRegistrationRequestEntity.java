@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
+import jakarta.persistence.Version;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -160,6 +161,9 @@ public class HelperRegistrationRequestEntity {
     )
     @JsonIgnore
     private LocalDateTime creationTimestamp;
+
+    @Version
+    private Long version;
 
     public void copyAllNonNullFields(HelperRegistrationRequestEntity e) {
         if (e.getRnocpp() != null) {

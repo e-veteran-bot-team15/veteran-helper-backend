@@ -2,7 +2,6 @@ package com.hackathon.veteranhelper.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.server.resource.authentication.DelegatingJwtGrantedAuthoritiesConverter;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
@@ -25,7 +24,7 @@ public class SpringConfig {
         // Set up http security to use the JWT converter defined above
         httpSecurity.oauth2ResourceServer().jwt().jwtAuthenticationConverter(
                 jwt -> new JwtAuthenticationToken(jwt, authoritiesConverter.convert(jwt)));
-        httpSecurity.authorizeHttpRequests(authorize -> authorize.anyRequest().permitAll());
+        httpSecurity.csrf().disable().authorizeHttpRequests(authorize -> authorize.anyRequest().permitAll());
         return httpSecurity.build();
     }
 }

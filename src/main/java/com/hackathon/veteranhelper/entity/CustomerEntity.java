@@ -8,6 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
+import jakarta.persistence.Version;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -101,11 +102,10 @@ public class CustomerEntity {
     @Column(
             name = "chat_id",
             nullable = false,
-            columnDefinition = "varchar(300)"
+            columnDefinition = "bigint"
     )
     @NotNull
-    @Length(min = 1, max = 300)
-    private String chatId;
+    private Long chatId;
 
     @Column(
             name = "times_entered_menu",
@@ -149,4 +149,10 @@ public class CustomerEntity {
     @Length(min = 3, max = 320)
     @NotNull
     private String education;
+
+    @Column(name = "current_menu_item_id", columnDefinition="uuid")
+    private UUID currentMenuItemId;
+
+    @Version
+    private Long version;
 }
