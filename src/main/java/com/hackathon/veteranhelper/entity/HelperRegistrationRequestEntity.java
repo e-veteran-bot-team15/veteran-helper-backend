@@ -17,7 +17,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;
 
-@Entity(name = "RegistrationRequestEntity")
+@Entity(name = "HelperRegistrationRequestEntity")
 @Table(
         name = "helper_registration_requests",
         uniqueConstraints = @UniqueConstraint(
