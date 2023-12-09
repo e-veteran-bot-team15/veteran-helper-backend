@@ -7,3 +7,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/${DB_NAME}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://194.44.63.157:8000/realms/veteran-helper
+          jwk-set-uri: http://194.44.63.157:8000/realms/veteran-helper/protocol/openid-connect/certs
