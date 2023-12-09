@@ -13,4 +13,6 @@ public class GetMenuItemDTO {
 
     private String message;
 
+    private String name;
+
 }

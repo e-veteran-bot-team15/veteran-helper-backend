@@ -30,6 +30,7 @@ public class MenuItemServiceImpl implements MenuItemService {
         return GetMenuItemDTO.builder()
                 .withId(e.getId())
                 .withMessage(e.getMessage())
+                .withName(e.getName())
                 .build();
     }
 }
