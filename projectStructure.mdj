@@ -1203,7 +1203,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -520,
-											"top": -152,
+											"top": -424,
 											"height": 13
 										},
 										{
@@ -1214,10 +1214,10 @@
 											},
 											"font": "Arial;13;1",
 											"left": 813,
-											"top": 343,
+											"top": 207,
 											"width": 199,
 											"height": 13,
-											"text": "Request"
+											"text": "SentRequest"
 										},
 										{
 											"_type": "LabelView",
@@ -1228,7 +1228,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -520,
-											"top": -152,
+											"top": -424,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -1242,14 +1242,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -520,
-											"top": -152,
+											"top": -424,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 808,
-									"top": 336,
+									"top": 200,
 									"width": 209,
 									"height": 25,
 									"stereotypeLabel": {
@@ -1287,7 +1287,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 797,
-											"top": 342,
+											"top": 70,
 											"width": 199,
 											"height": 13,
 											"text": "-questionTypeId: UUID",
@@ -1305,7 +1305,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 789,
-											"top": 445,
+											"top": 173,
 											"width": 191,
 											"height": 13,
 											"text": "-message: String",
@@ -1322,7 +1322,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 813,
-											"top": 368,
+											"top": 232,
 											"width": 199,
 											"height": 13,
 											"text": "-id: UUID",
@@ -1339,7 +1339,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 813,
-											"top": 383,
+											"top": 247,
 											"width": 199,
 											"height": 13,
 											"text": "-customerId: UUID",
@@ -1356,7 +1356,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 813,
-											"top": 398,
+											"top": 262,
 											"width": 199,
 											"height": 13,
 											"text": "-creationTime: LocalDateTime",
@@ -1374,7 +1374,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 797,
-											"top": 382,
+											"top": 110,
 											"width": 199,
 											"height": 13,
 											"text": "-menuItemId: UUID",
@@ -1391,7 +1391,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 813,
-											"top": 413,
+											"top": 277,
 											"width": 199,
 											"height": 13,
 											"text": "-applicationNumber: String",
@@ -1400,7 +1400,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 808,
-									"top": 361,
+									"top": 225,
 									"width": 209,
 									"height": 70
 								},
@@ -1415,7 +1415,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 808,
-									"top": 431,
+									"top": 295,
 									"width": 209,
 									"height": 10
 								},
@@ -1431,7 +1431,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -260,
-									"top": -76,
+									"top": -212,
 									"width": 10,
 									"height": 10
 								},
@@ -1447,7 +1447,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -260,
-									"top": -76,
+									"top": -212,
 									"width": 10,
 									"height": 10
 								}
@@ -1455,7 +1455,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 808,
-							"top": 336,
+							"top": 200,
 							"width": 209,
 							"height": 145,
 							"nameCompartment": {
@@ -2012,7 +2012,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 16,
-											"top": -80,
+											"top": -384,
 											"height": 13
 										},
 										{
@@ -2023,10 +2023,10 @@
 											},
 											"font": "Arial;13;1",
 											"left": 813,
-											"top": 527,
+											"top": 375,
 											"width": 246,
 											"height": 13,
-											"text": "Response"
+											"text": "AdminResponse"
 										},
 										{
 											"_type": "LabelView",
@@ -2037,7 +2037,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 16,
-											"top": -80,
+											"top": -384,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -2051,14 +2051,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 16,
-											"top": -80,
+											"top": -384,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 808,
-									"top": 520,
+									"top": 368,
 									"width": 256,
 									"height": 25,
 									"stereotypeLabel": {
@@ -2095,7 +2095,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 813,
-											"top": 550,
+											"top": 398,
 											"width": 246,
 											"height": 13,
 											"text": "-requestId",
@@ -2112,7 +2112,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 813,
-											"top": 565,
+											"top": 413,
 											"width": 246,
 											"height": 13,
 											"text": "-message: String",
@@ -2129,7 +2129,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 813,
-											"top": 580,
+											"top": 428,
 											"width": 246,
 											"height": 13,
 											"text": "-operatorEmail: String",
@@ -2146,7 +2146,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 813,
-											"top": 595,
+											"top": 443,
 											"width": 246,
 											"height": 13,
 											"text": "-creationTime: LocalDateTime",
@@ -2155,7 +2155,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 808,
-									"top": 545,
+									"top": 393,
 									"width": 256,
 									"height": 68
 								},
@@ -2170,7 +2170,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 808,
-									"top": 613,
+									"top": 461,
 									"width": 256,
 									"height": 10
 								},
@@ -2186,7 +2186,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 8,
-									"top": -40,
+									"top": -192,
 									"width": 10,
 									"height": 10
 								},
@@ -2202,7 +2202,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 8,
-									"top": -40,
+									"top": -192,
 									"width": 10,
 									"height": 10
 								}
@@ -2210,7 +2210,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 808,
-							"top": 520,
+							"top": 368,
 							"width": 256,
 							"height": 105,
 							"nameCompartment": {
@@ -2643,7 +2643,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Request",
+					"name": "SentRequest",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
@@ -3088,7 +3088,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Response",
+					"name": "AdminResponse",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
